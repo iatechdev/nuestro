@@ -1,0 +1,116 @@
+CREATE DATABASE pruebaccoa;
+USE pruebaccoa;
+CREATE TABLE user(
+  id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  nit VARCHAR (20) NOT NULL,
+  created_at TIMESTAMP NOT NULL DEFAULT current_timestamp
+) ENGINE = InnoDB DEFAULT CHARSET = utf8;
+CREATE TABLE contacts_cstm(
+  id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  administrativo_c TINYINT(1)  ,
+  comercialventas_c TINYINT(1) ,
+  comercioexterior_c TINYINT(1) ,
+  competenciasblandas_c TINYINT(1) ,
+  comunicaciones_c  TINYINT(1) ,
+  contabilidad_c TINYINT(1) ,
+  economianaranja_c TINYINT(1) ,
+  gerencia_c TINYINT(1) ,
+  gestiondecalidad_c TINYINT(1) ,
+  gestionestrategica_c TINYINT(1) ,
+  gestionhumana_c TINYINT(1) ,
+  idiomas_c TINYINT(1) ,
+  innovacion_c TINYINT(1) ,
+  juridicoylegal_c TINYINT(1) ,
+  mercadeo_c TINYINT(1) ,
+  normativas_c TINYINT(1) ,
+  procesosproductividad_c TINYINT(1) ,
+  proyectos_c TINYINT(1) ,
+  sectorpublico_c TINYINT(1) ,
+  serviciocliente_c TINYINT(1),
+  ti_c TINYINT(1),
+  tributario_c TINYINT(1),
+  user_id INT(11),
+  CONSTRAINT fk_usercontacts FOREIGN KEY (user_id) REFERENCES user (id),
+  created_at TIMESTAMP NOT NULL DEFAULT current_timestamp
+) ENGINE = InnoDB DEFAULT CHARSET = utf8;
+
+CREATE TABLE contacts_cstm(
+  id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  identificacion_c VARCHAR (255),
+  autorizacion_datos_personale_c TINYINT(1)  ,
+  administrativo_c TINYINT(1)  ,
+  comercialventas_c TINYINT(1) ,
+  comercioexterior_c TINYINT(1) ,
+  competenciasblandas_c TINYINT(1) ,
+  comunicaciones_c  TINYINT(1) ,
+  contabilidad_c TINYINT(1) ,
+  economianaranja_c TINYINT(1) ,
+  gerencia_c TINYINT(1) ,
+  gestiondecalidad_c TINYINT(1) ,
+  gestionestrategica_c TINYINT(1) ,
+  gestionhumana_c TINYINT(1) ,
+  idiomas_c TINYINT(1) ,
+  innovacion_c TINYINT(1) ,
+  juridicoylegal_c TINYINT(1) ,
+  mercadeo_c TINYINT(1) ,
+  normativas_c TINYINT(1) ,
+  procesosproductividad_c TINYINT(1) ,
+  proyectos_c TINYINT(1) ,
+  sectorpublico_c TINYINT(1) ,
+  serviciocliente_c TINYINT(1),
+  ti_c TINYINT(1),
+  tributario_c TINYINT(1),
+  CONSTRAINT fk_id_u FOREIGN KEY (id_u) REFERENCES user (id),
+  created_at TIMESTAMP NOT NULL DEFAULT current_timestamp
+) ENGINE = InnoDB DEFAULT CHARSET = utf8;
+
+
+
+/*{
+            "administrativo_c": "TRUE",
+            "comercialventas_c": "FALSE",
+            "comercioexterior_c": "TRUE",
+            "competenciasblandas_c": "TRUE",
+            "contabilidad_c": "TRUE",
+            "economianaranja_c": "TRUE",
+            "gerencia_c": "TRUE",
+            "gestiondecalidad_c": "TRUE",
+            "gestionestrategica_c": "TRUE",
+            "gestionhumana_c": "FALSE",
+            "idiomas_c": "TRUE",
+            "innovacion_c": "FALSE",
+            "juridicoylegal_c": "TRUE",
+            "mercadeo_c": "TRUE",
+            "normativas_c": "TRUE",
+            "procesosproductividad_c": "TRUE",
+            "proyectos_c": "FALSE",
+            "sectorpublico_c": "FALSE",
+            "serviciocliente_c": "FALSE",
+            "ti_c": "FALSE",
+            "tributario_c": "TRUE"
+    }*/
+
+{
+  "identificacion_c":"12456789872"
+  "administrativo_c": TRUE,
+  "comercialventas_c": FALSE,
+  "comercioexterior_c": TRUE,
+  "competenciasblandas_c": TRUE,
+  "contabilidad_c": TRUE,
+  "economianaranja_c": TRUE,
+  "gerencia_c": TRUE,
+  "gestiondecalidad_c": TRUE,
+  "gestionestrategica_c": TRUE,
+  "gestionhumana_c": FALSE,
+  "idiomas_c": TRUE,
+  "innovacion_c": FALSE,
+  "juridicoylegal_c": TRUE,
+  "mercadeo_c": TRUE,
+  "normativas_c": TRUE,
+  "procesosproductividad_c": TRUE,
+  "proyectos_c": FALSE,
+  "sectorpublico_c": FALSE,
+  "serviciocliente_c": FALSE,
+  "ti_c": FALSE,
+  "tributario_c": TRUE,
+}

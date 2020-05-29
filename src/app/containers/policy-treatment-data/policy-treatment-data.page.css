@@ -1,0 +1,31 @@
+.PolicyDataPage {width: 100%; background-image: url(../../../assets/images/preview-background.svg); background-position: center; background-repeat: no-repeat; background-size: contain;}
+.PolicyDataPage > div.lineGray {width: 100%; margin: 50px 0; height: 110px; background-color: #F7F7F7; display: flex; align-items: center;}
+.PolicyDataPage > div.lineGray > h2 {font-size: 21px; font-weight: 700; color: #747474;}
+.PolicyDataPage > div.lineGray > h2:first-child {margin: 0 25% 0 5% ;}
+.PolicyDataPage > form button {width: 11%; border: none; min-width: 121px; height: 45px; font-size: 18px; display: block; margin: 50px auto ;box-shadow: 3px 3px 16px #00000029; background-color: #85C63F; border-radius: 4px; color: white;}
+.PolicyDataPage > form button:hover {background-color: #7CBA38;}
+.PolicyDataPage > form button:focus {border: none;}
+.PolicyDataPage  div.form {width: 85%; margin: 100px 5% 0; display: flex; justify-content: center;}
+.PolicyDataPage  div.form  label.content-input {position: relative; display: block;}
+.PolicyDataPage  div.form  label.content-input input{appearance: none; outline: none; position: absolute; right: 0; -webkit-appearance: none; -moz-appearance: none; visibility: hidden;}
+.PolicyDataPage  div.form  label.content-input input + i {background: transparent;position: absolute; border-radius: 1px; width: 20px; height: 20px; left: 0;top: 0; box-shadow: 0px 2px 2px #00000029; border: 1px solid #707070;}
+.PolicyDataPage  div.form  label.content-input input[type=checkbox]:checked + i {border: 1px solid #039948;background: #7CBA38; background-image: url(../../../assets/icons/check.svg); background-position: center; height: 21px; width: 21px; background-size: 80%; background-repeat: no-repeat;}
+.PolicyDataPage  h3 {font-size: 30px; font-weight: 700; color: #7CBA38; margin-left: 5%;}
+.PolicyDataPage  h4 {font-size: 23px; cursor: pointer; font-weight: 700; color: #7CBA38; margin-left: 5%;}
+.PolicyDataPage  P.paragraph {font-size: 18px; color: #747474; margin: 35px 50px 15px 5%;}
+.mg-top-55-i {margin-top:55px !important; }
+.PolicyDataPage > form > div.form label.style-font {margin-top: -4px;}
+.style-font {font-size: 25px; line-height: 30px; color: #747474; font-weight: 700; margin-left: 32px;}
+.errorRequiredAuth { color: #FF0000; display: flex; justify-content: center; align-items: center;font-size: 20px; margin-top: 5px;}
+
+
+@media only screen and (max-width:1200px)
+    {
+      .Box {height: initial !important;}
+    }
+
+@media only screen and (max-width:474px)
+    {
+        .PolicyDataPage > div.lineGray > h2:first-child {margin: 0 11% 0 5% ;}
+        .PolicyDataPage  div.form {width: 85%; margin: 50px 5% 0; display: block;}
+    }

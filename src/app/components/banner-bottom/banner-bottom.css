@@ -1,0 +1,6 @@
+.BannerBottomComponent{ width: 100vw; height: 35%; background-image: url(../../../assets/images/Trazados.png); background-size: cover;}
+
+@media only screen and (max-width:600px)
+    {
+        .BannerBottomComponent {background-image: url(../../../assets/images/banner-bottom-mobile.svg);}
+    }

@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6158977b.chunk.css",
+    "main.js": "/static/js/main.b47d1c07.chunk.js",
+    "main.js.map": "/static/js/main.b47d1c07.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.eee4c281.js",
+    "runtime-main.js.map": "/static/js/runtime-main.eee4c281.js.map",
+    "static/js/2.693bf41a.chunk.js": "/static/js/2.693bf41a.chunk.js",
+    "static/js/2.693bf41a.chunk.js.map": "/static/js/2.693bf41a.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.cd17be19828e614d94a4f49980291711.js": "/precache-manifest.cd17be19828e614d94a4f49980291711.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.6158977b.chunk.css.map": "/static/css/main.6158977b.chunk.css.map",
+    "static/media/global.css": "/static/media/Diavlo_LIGHT_II_37.95d1c4c9.otf",
+    "static/media/banner-bottom.css": "/static/media/banner-bottom-mobile.1daee857.svg",
+    "static/media/policy-treatment-data.page.css": "/static/media/check.35798753.svg",
+    "static/media/error_Icon.svg": "/static/media/error_Icon.91071572.svg",
+    "static/media/logo-cooa.png": "/static/media/logo-cooa.69a8b9f2.png",
+    "static/media/logo_ccoa_white.png": "/static/media/logo_ccoa_white.faf717a0.png",
+    "static/media/save.page.css": "/static/media/preview-background.923fd4b8.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eee4c281.js",
+    "static/js/2.693bf41a.chunk.js",
+    "static/css/main.6158977b.chunk.css",
+    "static/js/main.b47d1c07.chunk.js"
+  ]
+}
