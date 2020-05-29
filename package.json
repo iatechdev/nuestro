@@ -1,7 +1,6 @@
 {
   "name": "proyecto-ccoa",
   "version": "0.1.0",
-  "homepage": "https://master-ccoa.iatech.com.co/",
   "private": true,
   "dependencies": {
     "axios": "^0.19.2",

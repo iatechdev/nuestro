@@ -6,12 +6,12 @@ import './save.page.css';
 const Home = ({ history, data, ref }) =>{ 
 
 
-function calc(){
+/*function calc(){
     let heightPage = parseInt(window.getComputedStyle(document.querySelector(".Box-i")).height);
     document.querySelector('.Box-i').style.height = heightPage + "px";
 }
 
-document.addEventListener("DOMContentLoaded", calc);
+document.addEventListener("DOMContentLoaded", calc);*/
 
 
     return(

@@ -8,15 +8,15 @@ import axios from 'axios';
 
 const Preview = ({ history }) =>{
 
-    const [nit] = useState(JSON.parse(localStorage.getItem("Token")));
+    /*const [nit] = useState(JSON.parse(localStorage.getItem("Token")));
     const { register,handleSubmit, errors} = useForm();
     const [state, setState] = useState(false);
     const [authdata, setAuth] = useState({});
-    const onSubmit = dataForm => {formGuard(dataForm)};
+    const onSubmit = dataForm => {formGuard(dataForm)};*/
 
 
 
-    function calc(){
+    /*function calc(){
         var heightPage = parseInt(window.getComputedStyle(document.querySelector(".Box")).height);
             document.querySelector('.Box').style.height = heightPage + "px";
         }
@@ -86,31 +86,31 @@ const Preview = ({ history }) =>{
 
     useEffect(() => {
         getAuth();
-    },[]);
+    },[]);*/
     
 
     return(
 
         <React.Fragment>
         <div id="modal">
-                <Modal show={state} close={closeModal} acept={aceptModal}> </Modal>
+                <Modal> </Modal>
             </div>
             <div className="Box">
                 <BannerTop title="CONFIRMA / ACTUALIZA TUS DATOS"/>
                <div className='PolicyDataPage'>
                     <div className="lineGray">
                         <h2>RAZÓN SOCIAL</h2>
-                        <h2>NIT. <span> {nit.nit} </span> </h2>
+                        <h2>NIT. <span> </span> </h2>
                     </div>
                     <h3> HABEAS DATA  </h3>
                     <p className="paragraph mg-top-55-i"> La CCOA cuenta con datos personales suministrados por usted en este formulario, los cuales se utilizan expresamente conforme se ha establecido en la política de tratamiento de información.</p>
-                    <h4 onClick={openModalHandler}> VER POLÍTICA </h4>
+                    <h4 > VER POLÍTICA </h4>
                     <p className="paragraph"> Teniendo en cuenta lo anterior, al guardar, autoriza a la CCOA que la información suministrada en este documento sea incorporada en su base de datos, entendiendo que el tratamiento de los datos personales por parte de la compañía tiene una finalidad legítima de acuerdo a la Ley y la Constitución </p>
-                    <form onSubmit={handleSubmit(onSubmit)}>
+                    <form >
                         <div className="form">
                         <div>
                             <label className="content-input">
-                                    <input type="checkbox" onChange={e => handleChange(e)}  checked={authdata.autoriza_datos_c ? true : false}  name="autoriza_datos_c"  id="autoriza_datos_c" ref={register({required:true})} />
+                                    <input type="checkbox"  />
                                     <i></i>
                                     
                                 </label>
@@ -118,9 +118,8 @@ const Preview = ({ history }) =>{
                         </div>
             
                         </div>
-                        <div className ="errorRequiredAuth"> { errors.autoriza_datos_c && 'Seleccioné el campo'} </div> 
+                        <div className ="errorRequiredAuth">  </div> 
                         <button > Guardar </button>
-                        
 
                     </form>
                </div>

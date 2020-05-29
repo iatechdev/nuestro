@@ -7,7 +7,7 @@ import axios from 'axios';
 
 const Preview = ({ history }) =>{
 
-    const [nit] = useState(JSON.parse(localStorage.getItem("Token")));
+    /*const [nit] = useState(JSON.parse(localStorage.getItem("Token")));
     const { register,handleSubmit} = useForm();
     const [themesModel, setThemesModel] = useState({});
     const onSubmit = dataForm => {formGuard(dataForm)}
@@ -65,7 +65,7 @@ const Preview = ({ history }) =>{
     useEffect(() => {
         getThemes();
     },[]);
-
+*/
     
 
     return(
@@ -74,86 +74,86 @@ const Preview = ({ history }) =>{
             <BannerTop title="CONFIRMA / ACTUALIZA TUS DATOS"/>
                <div className='PreviewPage'>
                     <div className="lineGray">
-                        <h2 onClick={()=>{console.log(themesModel)}}>RAZÓN SOCIAL</h2>
-                        <h2>NIT. <span> {nit.nit} </span> </h2>
+                        <h2 >RAZÓN SOCIAL</h2>
+                        <h2>NIT. <span></span> </h2>
                     </div>
                     <h3> TEMAS DE INTERÉS </h3>
-                    <form onSubmit={handleSubmit(onSubmit)}>
+                    <form >
                         <div className="form">
                         <div className="w-50-c">
                             <div className="w-100">
                                 <label className="content-input">
-                                    <input type="checkbox" onChange={e => handleChange(e)} name="administrativo_c" ref={register}   checked={themesModel.administrativo_c ? true : false} id="administrativo_c"/>
+                                    <input type="checkbox" />
                                     <i></i>
                                 </label>
                                 <label className="style-font" htmlFor="administrativo_c"> Administrativa </label>
                             </div>
                             <div className="w-100">
                                 <label className="content-input">
-                                    <input type="checkbox" onChange={e => handleChange(e)} name="comercioyventas_c"   checked={themesModel.comercioyventas_c ? true : false} ref={register}  id="comercioyventas_c"/>
+                                    <input type="checkbox" />
                                     <i></i>
                                 </label>
                                 <label className="style-font" htmlFor="comercioyventas_c"> Comercial y venta </label>
                             </div>
                             <div className="w-100">
                                 <label className="content-input">
-                                    <input type="checkbox" onChange={e => handleChange(e)} checked={themesModel.comercio_exterior_c ? true : false} name="comercio_exterior_c" ref={register}  id="comercio_exterior_c"/>
+                                    <input type="checkbox" />
                                     <i></i>
                                 </label>
                                 <label className="style-font" htmlFor="comercio_exterior_c"> Comercio Exterior</label>
                             </div>
                             <div className="w-100">
                                 <label className="content-input">
-                                    <input type="checkbox" onChange={e => handleChange(e)} onChange={e => handleChange(e)} checked={themesModel.competenciasblandas_c ? true : false} name="competenciasblandas_c" ref={register}  id="competenciasblandas_c"/>
+                                    <input type="checkbox" />
                                     <i></i>
                                 </label>
                                 <label className="style-font" htmlFor="competenciasblandas_c"> Competencias blandas</label>
                             </div>
                             <div className="w-100">
                                 <label className="content-input">
-                                    <input type="checkbox" onChange={e => handleChange(e)} checked={themesModel.comunicaciones_c ? true : false} name="comunicaciones_c" ref={register}  id="comunicaciones_c"/>
+                                    <input type="checkbox"  id="comunicaciones_c"/>
                                     <i></i>
                                 </label>
                                 <label className="style-font" htmlFor="comunicaciones_c"> Comunicaciones</label>
                             </div>
                             <div className="w-100">
                                 <label className="content-input">
-                                    <input type="checkbox" onChange={e => handleChange(e)}  checked={themesModel.contabilidad_c ? true : false} name="contabilidad_c" ref={register}  id="contabilidad_c"/>
+                                    <input type="checkbox"  name="contabilidad_c"   id="contabilidad_c"/>
                                     <i></i>
                                 </label>
                                 <label className="style-font" htmlFor="contabilidad_c"> Contabilidad</label>
                             </div>
                             <div className="w-100">
                                 <label className="content-input">
-                                    <input type="checkbox" onChange={e => handleChange(e)} checked={themesModel.economia_naranja_c ? true : false} name="economia_naranja_c" ref={register} id="economia_naranja_c"/>
+                                    <input type="checkbox"  name="economia_naranja_c" id="economia_naranja_c"/>
                                     <i></i>
                                 </label>
                                 <label className="style-font" htmlFor="economia_naranja_c"> Econimia naranja</label>
                             </div>
                             <div className="w-100">
                                 <label className="content-input">
-                                    <input type="checkbox" onChange={e => handleChange(e)} checked={themesModel.gerencia_c ? true : false} name="gerencia_c" ref={register} id="gerencia_c"/>
+                                    <input type="checkbox"  name="gerencia_c"  id="gerencia_c"/>
                                     <i></i>
                                 </label>
                                 <label className="style-font" htmlFor="gerencia_c"> Gerencia</label>
                             </div>
                             <div className="w-100">
                                 <label className="content-input">
-                                    <input type="checkbox" onChange={e => handleChange(e)} checked={themesModel.gestiondecalidad_c ? true : false} name="gestiondecalidad_c" ref={register} id="gestiondecalidad_c"/>
+                                    <input type="checkbox" name="gestiondecalidad_c" id="gestiondecalidad_c"/>
                                     <i></i>
                                 </label>
                                 <label className="style-font" htmlFor="gestiondecalidad_c"> Gestion de calidad</label>
                             </div>
                             <div className="w-100">
                                 <label className="content-input">
-                                    <input type="checkbox" onChange={e => handleChange(e)} checked={themesModel.gestionestrategica_c ? true : false} name="gestionestrategica_c" ref={register} id="gestionestrategica_c"/>
+                                    <input type="checkbox"   id="gestionestrategica_c"/>
                                     <i></i>
                                 </label>
                                 <label className="style-font" htmlFor="gestionestrategica_c"> Gestion estratégica</label>
                             </div>
                              <div className="w-100">
                                 <label className="content-input">
-                                    <input type="checkbox" onChange={e => handleChange(e)} checked={themesModel.gestionhumana_c ? true : false}  name="gestionhumana_c" ref={register} id="gestionhumana_c"/>
+                                    <input type="checkbox"  id="gestionhumana_c"/>
                                     <i></i>
                                 </label>
                                 <label className="style-font" htmlFor="gestionhumana_c"> Gestión humana</label>
@@ -163,82 +163,19 @@ const Preview = ({ history }) =>{
                         <div className="w-50-c">
                             <div className="w-100">
                                 <label className="content-input">
-                                    <input type="checkbox" onChange={e => handleChange(e)} checked={themesModel.idiomas_c ? true : false} name="idiomas_c" ref={register} id="idiomas_c"/>
+                                    <input type="checkbox"  name="idiomas_c" id="idiomas_c"/>
                                     <i></i>
                                 </label>
                                 <label className="style-font" htmlFor="idiomas_c"> Idiomas</label>
                             </div>
                             <div className="w-100">
                                 <label className="content-input">
-                                    <input type="checkbox" onChange={e => handleChange(e)} checked={themesModel.innovacion_c ? true : false} name="innovacion_c" ref={register} id="innovacion_c"/>
+                                    <input type="checkbox"  id="innovacion_c"/>
                                     <i></i>
                                 </label>
                                 <label className="style-font" htmlFor="innovacion_c"> Innovacion</label>
                             </div>
-                            <div className="w-100">
-                                <label className="content-input">
-                                    <input type="checkbox" onChange={e => handleChange(e)} checked={themesModel.juricoylegal_c ? true : false} name="juricoylegal_c" ref={register} id="juricoylegal_c"/>
-                                    <i></i>
-                                </label>
-                                <label className="style-font" htmlFor="juricoylegal_c"> Jurídico y legal </label>
-                            </div>
-                            <div className="w-100">
-                                <label className="content-input">
-                                    <input type="checkbox" onChange={e => handleChange(e)} checked={themesModel.mercadeo_c ? true : false} name="mercadeo_c" ref={register}  id="mercadeo_c"/>
-                                    <i></i>
-                                </label>
-                                <label className="style-font" htmlFor="mercadeo_c">Mercadeo</label>
-                            </div>
-                            <div className="w-100">
-                                <label className="content-input">
-                                    <input type="checkbox" onChange={e => handleChange(e)} checked={themesModel.normativas_c ? true : false} name="normativas_c" ref={register} id="normativas_c"/>
-                                    <i></i>
-                                </label>
-                                <label className="style-font" htmlFor="normativas_c">Normativas</label>
-                            </div>
-                            <div className="w-100">
-                                <label className="content-input">
-                                    <input type="checkbox" onChange={e => handleChange(e)} checked={themesModel.procesosyproductividad_c ? true : false} name="procesosyproductividad_c" ref={register} id="procesosyproductividad_c"/>
-                                    <i></i>
-                                </label>
-                                <label className="style-font" htmlFor="procesosyproductividad_c">Procesos y productividad</label>
-                            </div>
-                            <div className="w-100">
-                                <label className="content-input">
-                                    <input type="checkbox" onChange={e => handleChange(e)} checked={themesModel.proyectos_c ? true : false} name="proyectos_c" ref={register} id="proyectos_c"/>
-                                    <i></i>
-                                </label>
-                                <label className="style-font" htmlFor="proyectos_c">Proyectos</label>
-                            </div>
-                            <div className="w-100">
-                                <label className="content-input">
-                                    <input type="checkbox" onChange={e => handleChange(e)} checked={themesModel.sector_publico_c ? true : false} name="sector_publico_c" ref={register} id="sector_publico_c"/>
-                                    <i></i>
-                                </label>
-                                <label className="style-font" htmlFor="sector_publico_c">Sector publico</label>
-                            </div>
-                            <div className="w-100">
-                                <label className="content-input">
-                                    <input type="checkbox" onChange={e => handleChange(e)} checked={themesModel.servicioalcliente_c ? true : false} name="servicioalcliente_c" ref={register} id="servicioalcliente_c"/>
-                                    <i></i>
-                                </label>
-                                <label className="style-font" htmlFor="servicioalcliente_c"> Servicio al cliente</label>
-                            </div>
-                            <div className="w-100">
-                                <label className="content-input">
-                                    <input type="checkbox" onChange={e => handleChange(e)} checked={themesModel.ti_tecnologiadelainformacion_c ? true : false} name="ti_tecnologiadelainformacion_c" ref={register}  id="ti_tecnologiadelainformacion_c"/>
-                                    <i></i>
-                                </label>
-                                <label className="style-font" htmlFor="ti_tecnologiadelainformacion_c"> TI: Tecnología de la información</label>
-                            </div>
-                            <div className="w-100">
-                                <label className="content-input">
-                                    <input type="checkbox" onChange={e => handleChange(e)} checked={themesModel.tributario_c ? true : false} name="tributario_c" ref={register} id="tributario_c"/>
-                                    <i></i>
-                                </label>
-                                <label className="style-font" htmlFor="tributario_c"> Tributario</label>
-                            </div>
-
+            
                         </div>
                     </div>
                     <button> Guardar </button>

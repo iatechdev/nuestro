@@ -9,7 +9,7 @@ import axios from "axios";
 
 const Home = ({ history, data, ref }) =>{
 
-    const { register, handleSubmit, errors} = useForm(0);
+    /*const { register, handleSubmit, errors} = useForm(0);
     const [login, setLogin] = useState(0);
     const [stateButton, setStateButton] = useState(true);
     const [stateDOM, setStateDOM] = useState(false);
@@ -53,20 +53,20 @@ function calc(){
         document.querySelector('.Box').style.height = heightPage + "px";
 }
 
-document.addEventListener("DOMContentLoaded", calc);
+document.addEventListener("DOMContentLoaded", calc);*/
 
 
     return(
         <React.Fragment>
             <div className="Box">
             <div className='HomePage'>
-                <img src={Logo} alt="LOGO COOA" onClick={show} title="Logo COOA" />
+                <img src={Logo} alt="LOGO COOA"  title="Logo COOA" />
                 <p> Bienvenido a la plataforma de actualización de datos <br className="brr" /> y autorización de habeas data de la CCOA </p>
-                <form onSubmit={handleSubmit(onSubmit)}>
-                    <input type="text" autoComplete="off" name="nit" ref={register({required:true})} placeholder="Digite el NIT"/> 
-                    <div className ="errorRequired"> { errors.nit && 'Debe ingresar su NIT'} </div> 
-                   {login === 1 ? <div className="notLogin"> <img src={ErrorIcon} className="icon-error" alt="Icono de Error" title="Icono de Error"/> <div className="info-error"> El NIT ingresado no se encuentra en nuestra base de datos. <span> Intente nuevamente</span> </div> </div> : null  } 
-                    <button> Enviar {stateButton ? null : <div className="loader">Loading...</div> } </button>
+                <form>
+                    <input type="text" autoComplete="off" name="nit" placeholder="Digite el NIT"/> 
+                    <div className ="errorRequired"> </div> 
+                   <div className="notLogin"> <img src={ErrorIcon} className="icon-error" alt="Icono de Error" title="Icono de Error"/> <div className="info-error"> El NIT ingresado no se encuentra en nuestra base de datos. <span> Intente nuevamente</span> </div> </div>  
+                    <button> Enviar </button>
                 </form>
             </div>
             <BannerBottom/>                  
