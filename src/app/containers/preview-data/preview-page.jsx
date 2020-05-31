@@ -7,67 +7,6 @@ import axios from 'axios';
 
 const Preview = ({ history }) =>{
 
-    /*const [nit] = useState(JSON.parse(localStorage.getItem("Token")));
-    const { register,handleSubmit} = useForm();
-    const [themesModel, setThemesModel] = useState({});
-    const onSubmit = dataForm => {formGuard(dataForm)}
-
-    async function getThemes(){
-        await axios.get(`https://master-ccoa.iatech.com.co:4001/api/themes/themescustomer?doc=${nit.nit}`).then((response) =>{
-            if(response.status === 200 && response.data){
-                setThemesModel(response.data.responde[0]);
-            }
-
-        }).catch((error)=>{
-            console.log(error);
-        });
-    }
-
-    function handleChange(e) {
-        setThemesModel({...themesModel, [e.target.name] : e.target.checked })
-    }
-
-    async function formGuard(){
-        await axios.put(`https://master-ccoa.iatech.com.co:4001/api/themes/newinterest_nit/${themesModel.id_c}`,
-        {
-            administrativo_c : themesModel.administrativo_c,
-            comercio_exterior_c : themesModel.comercio_exterior_c,
-            comunicaciones_c : themesModel.comunicaciones_c,
-            economia_naranja_c : themesModel.economia_naranja_c,
-            gestiondecalidad_c : themesModel.gestiondecalidad_c,
-            gestionhumana_c : themesModel.gestionhumana_c,
-            innovacion_c : themesModel.innovacion_c,
-            mercadeo_c : themesModel.mercadeo_c,
-            procesosyproductividad_c : themesModel.procesosyproductividad_c,
-            sector_publico_c : themesModel.sector_publico_c,
-            ti_tecnologiadelainformacion_c : themesModel.ti_tecnologiadelainformacion_c,
-            comercioyventas_c : themesModel.comercioyventas_c,
-            competenciasblandas_c : themesModel.competenciasblandas_c,
-            contabilidad_c : themesModel.contabilidad_c,
-            gerencia_c : themesModel.gerencia_c,
-            gestionestrategica_c : themesModel.gestionestrategica_c,
-            idiomas_c : themesModel.idiomas_c,
-            juricoylegal_c : themesModel.juricoylegal_c,
-            normativas_c : themesModel.normativas_c,
-            proyectos_c : themesModel.proyectos_c,
-            servicioalcliente_c : themesModel.servicioalcliente_c,
-            tributario_c : themesModel.tributario_c
-
-        }).then((response) =>{
-            history.push('/policy_data');        
-        }).catch((error)=>{
-            console.log(error);
-        });
-    }
-
-
-
-    useEffect(() => {
-        getThemes();
-    },[]);
-*/
-    
-
     return(
 
         <React.Fragment>
@@ -181,10 +120,6 @@ const Preview = ({ history }) =>{
                     <button> Guardar </button>
                     </form>
                </div>
-           
-
-
-               
            </React.Fragment>
     )
 }
