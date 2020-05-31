@@ -1,0 +1,127 @@
+.main-container {position: fixed; top: 0; right: 0; bottom: 0; left: 0; width: 100%; box-sizing: border-box;}
+
+/* ********************** */
+
+.main-protection-elements-container {width: 60%; margin: 50px auto;}
+
+/* ********************** */
+
+.protection-elements-section {width: 60%; margin: 0 auto; text-align: center;}
+.protection-elements-title {font-size: 20px; color: #ECBF43; font-family: Helvetica; font-weight: bold; text-transform: uppercase; margin: 0 0 20px; text-align: center;}
+.protection-options-container {display: flex; flex-direction: row; justify-content: space-between;}
+input[type=text] {width: 20px; height: 20px; border: 1px solid #ECC149; box-shadow: 0px 2px 2px #00000029; border-radius: 50%; color: #ECC149; /* margin-right: 10px; */ cursor: pointer;}
+.s-element {color: #2E2E2E; font-family: Helvetica; font-size: 15px; font-weight: 400; margin-left: 10px;}
+
+/* ********************** */
+.options-risk-main-container {margin: 40px auto 0;}
+.options-risk-container {width: 70%; margin: 0 auto; padding: 0 140px; display: grid; grid-template-columns: 10% 90%;}
+.m-top {margin-top: 15px;}
+.s-checkbox {text-align: center; margin: 0 auto;}
+
+
+/* ********************** */
+
+.main-protection-elements-container form > button {width: 140px; cursor: pointer; border: none;  min-width: 121px; height: 30px; display: block; margin: 50px auto 0;box-shadow: 0px 3px 6px #00000029; background-color: #ECBF43; border-radius: 31px; color: #2E2E2E; display: flex; justify-content: center; align-items: center; text-transform: uppercase; font-family: Helvetica; font-size: 15px; font-weight: 500;}
+
+.ovalos-protection-elements {position: absolute; z-index: 5; right: 0px; bottom: 0; width: 30%; height: 30%; min-width: 600px; min-height: 300px;}
+
+.footer {position: absolute; bottom: 0;} 
+
+/* .footer2 {position: absolute; bottom: 10;} */
+
+@media only screen and (max-width:1200px)
+    {
+        .main-protection-elements-container {width: 100%; margin: 40px auto;}
+        .protection-elements-section {width: 100%; margin: 0 auto;}
+        .protection-elements-title {font-size: 16px; margin: 0 0 10px; text-align: center;}
+        .protection-options-container {display: flex; flex-direction: row; justify-content: center; text-align: center;}
+        .s-element {font-size: 14px; vertical-align: middle;}
+        .m-right {margin-right: 20px;}
+        
+        .options-risk-main-container {margin: 50px auto 0; position: relative; z-index: 10; align-items: center;}
+        .options-risk-container {width: 55%; margin: 20px auto; padding: 0; grid-template-columns: 10% 90%; align-items: center; justify-content: center;}
+        .s-checkbox {text-align: center; margin: 0 auto;}
+        .m-top {margin-top: 20px;}
+
+        .main-protection-elements-container form > button {position: relative; z-index: 10;}
+
+        /* footer */
+        /* .footer { display: none;} */
+        
+        /* ovalos */
+        .ovalos {right: 0; bottom: 50; width: 10%; height: 30%; min-width: 100px; min-height: 100px; z-index: 0;}
+        
+    }
+
+@media only screen and (max-width:1024px)
+    {
+        .main-protection-elements-container {width: 100%; margin: 40px auto;}
+        .protection-elements-section {width: 100%; margin: 0 auto;}
+        .protection-elements-title {font-size: 16px; margin: 0 0 10px; text-align: center;}
+        .protection-options-container {display: flex; flex-direction: row; justify-content: center; text-align: center;}
+        .s-element {font-size: 14px; vertical-align: middle;}
+        .m-right {margin-right: 20px;}
+        
+        .options-risk-main-container {margin: 50px auto 0; position: relative; z-index: 10; align-items: center;}
+        .options-risk-container {width: 60%; margin: 20px auto; padding: 0;}
+        .m-top {margin-top: 20px;}
+
+        .main-protection-elements-container form > button {position: relative; z-index: 10;}
+
+        /* footer */
+        .footer { display: none;}
+        
+        /* ovalos */
+        .ovalos {right: 0; bottom: 50; width: 10%; height: 30%; min-width: 100px; min-height: 100px; z-index: 0;}
+        
+    }
+
+@media only screen and (max-width:768px)
+    {
+        .main-protection-elements-container {width: 100%; margin: 40px auto;}
+        .protection-elements-section {width: 100%; margin: 0 auto;}
+        .protection-elements-title {font-size: 16px; margin: 0 0 10px; text-align: center;}
+        .protection-options-container {display: flex; flex-direction: row; justify-content: center; text-align: center;}
+        .s-element {font-size: 14px; vertical-align: middle;}
+        .m-right {margin-right: 20px;}
+        
+        .options-risk-main-container {margin: 50px auto 0; position: relative; z-index: 10; align-items: center;}
+        .options-risk-container {width: 80%; margin: 20px auto; padding: 0;}
+        .m-top {margin-top: 20px;}
+
+        .main-protection-elements-container form > button {position: relative; z-index: 10;}
+
+        /* footer */
+        .footer { display: none;}
+        
+        /* ovalos */
+        .ovalos {right: 0; bottom: 50; width: 10%; height: 30%; min-width: 100px; min-height: 100px; z-index: 0;}
+        
+    }
+
+
+@media only screen and (max-width:600px)
+    {
+        .main-protection-elements-container {width: 90%; margin: 20px auto;}
+        .protection-elements-section {width: 100%; margin: 0 auto;}
+        .protection-elements-title {font-size: 12px; margin: 0 0 10px; text-align: left;}
+        .protection-options-container {display: flex; flex-direction: column; justify-content: flex-start; text-align: left;}
+        
+        .options-risk-main-container {margin: 30px auto 0; position: relative; z-index: 10;}
+        .options-risk-container {width: 100%; margin: 0 auto; padding: 0;}
+        .s-element {font-size: 12px; margin-right: 15px;}
+        .m-top {margin-top: 15px;}
+        .r-top {margin-top: 10px;}
+
+        .main-protection-elements-container form > button {position: relative; z-index: 10;}
+
+        /* footer */
+        .footer { display: none;}
+        
+        /* ovalos */
+        .ovalos {right: 0; bottom: 50; width: 10%; height: 30%; min-width: 100px; min-height: 100px; z-index: 0;}
+    }
+
+
+
+
