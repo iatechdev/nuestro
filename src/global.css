@@ -7,6 +7,13 @@ body, #root {width: 100vw;}
     font-family: "Diavlo";
     src: url(./assets/fonts/Diavlo_LIGHT_II_37.otf);
 }
+
+/* @font-face {
+    font-family: "Myriad";
+    src: url(./assets/fonts/MYRIADPRO-BOLD.otf);
+} */
+
+
 .w-100 {width: 100%; }
 .w-50 {width: 50%;}
 

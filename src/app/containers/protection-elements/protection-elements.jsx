@@ -1,6 +1,6 @@
 import React, { useState }  from 'react';
 import Header from '../../components/Header/header.jsx';
-import Footer from '../../components/Footer/footer.jsx';
+import FooterElements from '../../components/FooterElements/footer-elements.jsx';
 import OvalosHome from '../../../assets/images/ovalos-home.svg';
 import PolicyData from '../../containers/policy-treatment-data/policy-treatment-data.page.jsx';
 import './protection-elements.css';
@@ -22,7 +22,10 @@ const ProtectionElements = () =>{
                             <h3 className='protection-elements-title'>lleva elementos de prevención</h3>
                             <div className='protection-options-container'>
                                 <div className='checkbox-container'>
-                                    <input className='s-checkbox' type="text"/>
+                                    <div>
+                                        <input className='s-checkbox' type="text"/>
+                                        <i></i>
+                                    </div>
                                     <label className='s-element m-right' htmlFor="">Tapabocas</label>
                                 </div>
                                 
@@ -64,8 +67,8 @@ const ProtectionElements = () =>{
 
                 <img className='ovalos-protection-elements' src={OvalosHome} alt=""/>
                 
-                <div className='footer'>
-                    <Footer/>
+                <div className='footer-protection'>
+                    <FooterElements/>
                 </div>
             </div>
         </React.Fragment>

@@ -1,5 +1,5 @@
 import React, { useState }  from 'react';
-import Footer from '../../components/Footer/footer.jsx';
+import FooterHome from '../../components/FooterHome/footer-home.jsx';
 import Logo from '../../../assets/images/logo-nuestro.svg';
 import OvalosHome from '../../../assets/images/ovalos-home.svg';
 import asiaticGirl from '../../../assets/images/asiatic-girl.png';
@@ -20,7 +20,7 @@ const Home = () =>{
                         <div className='radial-container'>
                             <div className="container-user">
                                 <label className="content-input">
-                                    <input className="s-radial" type="radio" id="cliente"/>
+                                    <input className="s-radial" type="radio" id="cliente" name="module" value="client"/>
                                     <i></i>
                                 </label>
                                 <label className="style-font m-client cliente" htmlFor="cliente">Cliente</label>
@@ -28,7 +28,7 @@ const Home = () =>{
 
                             <div className="container-user">
                                 <label className="content-input">
-                                    <input className="s-radial" type="radio" id="empleado"/>
+                                    <input className="s-radial" type="radio" id="empleado" name="module" value="employee"/>
                                     <i></i>
                                 </label>
                                 <label className="style-font empleado" htmlFor="empleado">Empleado</label>
@@ -48,8 +48,8 @@ const Home = () =>{
                     
                         <button> ingresar </button>
                     </form>
-                    <div className='footer'>
-                        <Footer/>
+                    <div className='footer-home'>
+                        <FooterHome/>
                     </div>
                 </div>
             </div>

@@ -28,7 +28,7 @@
 
 .ovalos-protection-elements {position: absolute; z-index: 5; right: 0px; bottom: 0; width: 30%; height: 30%; min-width: 600px; min-height: 300px;}
 
-.footer {position: absolute; bottom: 0;} 
+.footer-protection {position: absolute; bottom: 0;} 
 
 /* .footer2 {position: absolute; bottom: 10;} */
 
@@ -49,7 +49,7 @@
         .main-protection-elements-container form > button {position: relative; z-index: 10;}
 
         /* footer */
-        /* .footer { display: none;} */
+        /* .footer-protection { display: none;} */
         
         /* ovalos */
         .ovalos {right: 0; bottom: 50; width: 10%; height: 30%; min-width: 100px; min-height: 100px; z-index: 0;}
@@ -72,7 +72,7 @@
         .main-protection-elements-container form > button {position: relative; z-index: 10;}
 
         /* footer */
-        .footer { display: none;}
+        .footer-protection { display: none;}
         
         /* ovalos */
         .ovalos {right: 0; bottom: 50; width: 10%; height: 30%; min-width: 100px; min-height: 100px; z-index: 0;}
@@ -95,7 +95,7 @@
         .main-protection-elements-container form > button {position: relative; z-index: 10;}
 
         /* footer */
-        .footer { display: none;}
+        .footer-protection { display: none;}
         
         /* ovalos */
         .ovalos {right: 0; bottom: 50; width: 10%; height: 30%; min-width: 100px; min-height: 100px; z-index: 0;}
@@ -119,7 +119,7 @@
         .main-protection-elements-container form > button {position: relative; z-index: 10;}
 
         /* footer */
-        .footer { display: none;}
+        .footer-protection { display: none;}
         
         /* ovalos */
         .ovalos {right: 0; bottom: 50; width: 10%; height: 30%; min-width: 100px; min-height: 100px; z-index: 0;}

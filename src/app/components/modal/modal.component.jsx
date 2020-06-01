@@ -10,7 +10,6 @@ const modal = (props) => {
                 style={{
                     transform: props.show ? 'translateY(0vh)' : 'null',
                     display: props.show ? 'flex' : 'none',
-
             }}>
 
                 <div className="container-modal">
@@ -31,7 +30,6 @@ const modal = (props) => {
             </div>
             </div>
         </React.Fragment>
-        
     )
 }
 

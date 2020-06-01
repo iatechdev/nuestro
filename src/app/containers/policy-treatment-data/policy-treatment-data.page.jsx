@@ -103,7 +103,7 @@ const Preview = ({ history }) =>{
                         <h2>NIT. <span> </span> </h2>
                     </div>
                     <h3> HABEAS DATA  </h3>
-                    <p className="paragraph mg-top-55-i"> La CCOA cuenta con datos personales suministrados por usted en este formulario, los cuales se utilizan expresamente conforme se ha establecido en la política de tratamiento de información.</p>
+                    <p className="paragraph mg-top-55-i"> NUESTRO cuenta con datos personales suministrados por usted en este formulario, los cuales se utilizan expresamente conforme se ha establecido en la política de tratamiento de información.</p>
                     <h4 > VER POLÍTICA </h4>
                     <p className="paragraph"> Teniendo en cuenta lo anterior, al guardar, autoriza a la CCOA que la información suministrada en este documento sea incorporada en su base de datos, entendiendo que el tratamiento de los datos personales por parte de la compañía tiene una finalidad legítima de acuerdo a la Ley y la Constitución </p>
                     <form >
@@ -113,8 +113,8 @@ const Preview = ({ history }) =>{
                                     <input type="checkbox"  />
                                     <i></i>
                                     
-                                </label>
-                                <label className="style-font" htmlFor="autoriza_datos_c"> Autorizo el uso de datos personales </label>
+                            </label>
+                            <label className="style-font" htmlFor="autoriza_datos_c"> Autorizo el uso de datos personales </label>
                         </div>
             
                         </div>
