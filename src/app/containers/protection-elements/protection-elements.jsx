@@ -21,22 +21,28 @@ const ProtectionElements = () =>{
                         <div className='protection-elements-section'>
                             <h3 className='protection-elements-title'>lleva elementos de prevención</h3>
                             <div className='protection-options-container'>
-                                <div className='checkbox-container'>
-                                    <div>
-                                        <input className='s-checkbox' type="text"/>
+                                <div className='main-checkbox-container'>
+                                    <div className='checkbox-container'>
+                                        <input className='radio-elements' type="checkbox" id="tapabocas" name="" value=""/>
                                         <i></i>
                                     </div>
-                                    <label className='s-element m-right' htmlFor="">Tapabocas</label>
+                                    <label className='s-element' htmlFor="tapabocas">Tapabocas</label>
                                 </div>
                                 
-                                <div className='checkbox-container r-top'>
-                                    <input className='s-checkbox' type="text"/>
-                                    <label className='s-element m-right' htmlFor="">Máscara protectora</label>
+                                <div className='main-checkbox-container m-top-mobile'>
+                                    <div className='checkbox-container'>
+                                        <input className='radio-elements' type="checkbox" id="mascara" name="" value=""/>
+                                        <i></i>
+                                    </div>
+                                    <label className='s-element' htmlFor="mascara">Máscara protectora</label>
                                 </div>
                                 
-                                <div className='checkbox-container r-top'>
-                                    <input className='s-checkbox' type="text"/>
-                                    <label className='s-element' htmlFor="">Guantes</label>
+                                <div className='main-checkbox-container m-top-mobile'>
+                                    <div className='checkbox-container'>
+                                        <input className='radio-elements' type="checkbox" id="guantes" name="" value=""/>
+                                        <i></i>
+                                    </div>
+                                    <label className='s-element' htmlFor="guantes">Guantes</label>
                                 </div>
                             </div>
                         </div>
@@ -44,20 +50,35 @@ const ProtectionElements = () =>{
                         <div className='options-risk-main-container'>
                             <h3 className='protection-elements-title'>Seleccione las opciones que apliquen en su caso</h3>
                             <div className='options-risk-container'>
-                                    <input className='s-checkbox' type="text"/>
-                                    <label className='s-element' htmlFor="">He presentado algún síntoma la última semana (tos, fiebre, malestar general)</label>
+                                    <div className='checkbox-container-synthoms'>
+                                        <input className='s-checkbox' type="checkbox" id="sintoma1" name="" value=""/>
+                                        <i></i>
+                                    </div>
+                                    <label className='s-sintoma' htmlFor="sintoma1">He presentado algún síntoma la última semana (tos, fiebre, malestar general)</label>
 
-                                    <input className='s-checkbox m-top' type="text"/>
-                                    <label className='s-element m-top' htmlFor="">Estuve en contacto con personas que presentaron alguno de esos síntomas</label>
+                                    <div className='checkbox-container-synthoms'>
+                                        <input className='s-checkbox' type="checkbox" id="sintoma2" name="" value=""/>
+                                        <i></i>
+                                    </div>
+                                    <label className='s-sintoma' htmlFor="sintoma2">Estuve en contacto con personas que presentaron alguno de esos síntomas</label>
 
-                                    <input className='s-checkbox m-top' type="text"/>
-                                    <label className='s-element m-top' htmlFor="">Hice un viaje internacional en los últimos 30 días</label>
+                                    <div className='checkbox-container-synthoms'>
+                                        <input className='s-checkbox' type="checkbox" id="sintoma3" name="" value=""/>
+                                        <i></i>
+                                    </div>
+                                    <label className='s-sintoma' htmlFor="sintoma3">Hice un viaje internacional en los últimos 30 días</label>
                                 
-                                    <input className='s-checkbox m-top' type="text"/>
-                                    <label className='s-element m-top' htmlFor="">Hice un viaje nacional en los últimos 30 días</label>
+                                    <div className='checkbox-container-synthoms'>
+                                        <input className='s-checkbox' type="checkbox" id="sintoma4" name="" value=""/>
+                                        <i></i>
+                                    </div>
+                                    <label className='s-sintoma' htmlFor="sintoma4">Hice un viaje nacional en los últimos 30 días</label>
                                 
-                                    <input className='s-checkbox m-top' type="text"/>
-                                    <label className='s-element m-top' htmlFor="">Soy trabajador de la salud</label>
+                                    <div className='checkbox-container-synthoms'>
+                                        <input className='s-checkbox' type="checkbox" id="sintoma5" name="" value=""/>
+                                        <i></i>
+                                    </div>
+                                    <label className='s-sintoma' htmlFor="sintoma5">Soy trabajador de la salud</label>
                             </div>
                         </div>                        
 

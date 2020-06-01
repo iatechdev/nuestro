@@ -3,7 +3,6 @@ import FooterHome from '../../components/FooterHome/footer-home.jsx';
 import Logo from '../../../assets/images/logo-nuestro.svg';
 import OvalosHome from '../../../assets/images/ovalos-home.svg';
 import asiaticGirl from '../../../assets/images/asiatic-girl.png';
-import CheckIcon from '../../../assets/icons/check-yellow-icon.svg';
 import './home-page.css';
 
 
