@@ -36,8 +36,8 @@ const RegistroClientes = () =>{
                             
                             <input className='item3 personal-data-field' type="text" placeholder="Nombre Completo"/>
 
-                            <span className='span.grid-none'></span>
-                            
+                            <input className='item7 personal-data-field' type="text" placeholder="Nombre del Almacen"/>
+
                             <input className='item4 personal-data-field' type="text" placeholder="Teléfono / Celular"/>
                         </div>
 
